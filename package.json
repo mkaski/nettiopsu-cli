@@ -1,12 +1,11 @@
 {
   "name": "nettiopsu-cli",
   "description": "Nettiopsu Command Line Interface.",
-  "version": "0.1",
-  "main": "./bin/utu.cli.js",
+  "version": "1.0.0",
+  "main": "./bin/nettiopsu.cli.js",
   "dependencies": {
     "babel-preset-env": "^1.6.1",
     "cheerio": "^1.0.0-rc.2",
-    "commander-plus": "^0.0.6",
     "inquirer": "^5.1.0",
     "puppeteer": "^1.1.1"
   },
@@ -14,10 +13,10 @@
     "babel-cli": "^6.26.0"
   },
   "bin": {
-    "nettiopsu-cli": "./bin/utu.cli.js"
+    "nettiopsu-cli": "./bin/nettiopsu.cli.js"
   },
   "scripts": {
     "build": "babel index.js --out-file ./build/nettiopsu.js",
-    "start": "node ./bin/utu.cli.js"
+    "start": "node ./bin/nettiopsu.cli.js"
   }
 }

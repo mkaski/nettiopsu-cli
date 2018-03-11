@@ -23,7 +23,6 @@ async function getCourses(user, password) {
   await page.focus('#idToken2');
   await page.type('#idToken2', password);
   await page.click('#loginButton_0');
-  await page.waitFor(200);
   await page.waitForSelector('#personal_index');
   const content = await page.content();
   const $ = cheerio.load(content);
