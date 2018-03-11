@@ -4,8 +4,8 @@ const cheerio = require('cheerio');
 /**
  * getCourses
  * Returns array ['code', 'name', 'grade', 'date'] of latest course credits
- * @param {string} user - From where
- * @param {string} password - To where
+ * @param {string} user - username
+ * @param {string} password - password
  */
  async function getCourses(user, password) {
   const browser = await puppeteer.launch();
